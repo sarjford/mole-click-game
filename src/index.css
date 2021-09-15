@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Sacramento');
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -5,9 +7,127 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+    height: 100vh;
+    background: #80ABC0;
+    color: white;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+header {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+h1 {
+  font-family: 'Sacramento', 'Helvetica Neue', sans-serif;
+  font-size: 60px;
+  margin: 10px 0 0;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-transform: uppercase;
+}
+.game-stats {
+  width: 300px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 20px;
+  letter-spacing: 3px;
+}
+.game-stats span {
+  font-weight: bold;
+  display: block;
+  font-size: 40px;
+}
+
+.game-board {
+  width: 650px;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(6,minmax(100px,auto));
+  gap: 10px;
+  cursor: pointer;
+  margin: 20px 0 40px;
+}
+
+.game-finished {
+  opacity: .5;
+  cursor: default;
+}
+
+/* filler elements for blank 2x2 squares in top-left,
+top-right, bottom-left corners of grid*/
+.top {
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+.bottom {
+  grid-row-start: 5;
+  grid-row-end: 7;
+}
+.right {
+  grid-column-start: 5;
+  grid-column-end: 7;
+}
+.left {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+/* position last 4 .mole-home divs in 4 blank squares
+above to create diamond shape */
+.game-board div:nth-of-type(20) {
+  grid-column: 3;
+}
+.game-board div:nth-of-type(22) {
+  grid-row: 2;
+  grid-column: 2;
+}
+.game-board div:nth-of-type(23) {
+  grid-row: 2;
+  grid-column: 5;
+}
+.game-board div:last-child {
+  grid-column: 2;
+  grid-row: 5;
+}
+
+.mole-home {
+  display: flex;
+  justify-content: center;
+  border-radius: 50%;
+  background: #C2D8E3;
+  align-items: flex-end;
+  overflow: hidden;
+}
+img {
+  display: block;
+  width: 50px;
+}
+
+.game-buttons {
+  display: flex;
+  justify-content: center;
+}
+
+button {
+  font-size: 30px;
+  background: transparent;
+  color: white;
+  border: 2px solid white;
+  padding: 12px 40px;
+  border-radius: 30px;
+  letter-spacing: 4px;
+  cursor: pointer;
+}
+
+button:not([disabled]):hover {
+  color: #80ABC0;
+  background: white;
+}
+
+button:disabled {
+  cursor: default;
+  opacity: .5;
 }
