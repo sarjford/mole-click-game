@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/mole-click-game/static/css/main.4a864138.chunk.css",
+    "main.js": "/mole-click-game/static/js/main.578d78d4.chunk.js",
+    "main.js.map": "/mole-click-game/static/js/main.578d78d4.chunk.js.map",
+    "runtime-main.js": "/mole-click-game/static/js/runtime-main.f08b983a.js",
+    "runtime-main.js.map": "/mole-click-game/static/js/runtime-main.f08b983a.js.map",
+    "static/js/2.1d4f7da5.chunk.js": "/mole-click-game/static/js/2.1d4f7da5.chunk.js",
+    "static/js/2.1d4f7da5.chunk.js.map": "/mole-click-game/static/js/2.1d4f7da5.chunk.js.map",
+    "index.html": "/mole-click-game/index.html",
+    "static/css/main.4a864138.chunk.css.map": "/mole-click-game/static/css/main.4a864138.chunk.css.map",
+    "static/js/2.1d4f7da5.chunk.js.LICENSE.txt": "/mole-click-game/static/js/2.1d4f7da5.chunk.js.LICENSE.txt",
+    "static/media/mole.cbaf3b29.png": "/mole-click-game/static/media/mole.cbaf3b29.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.f08b983a.js",
+    "static/js/2.1d4f7da5.chunk.js",
+    "static/css/main.4a864138.chunk.css",
+    "static/js/main.578d78d4.chunk.js"
+  ]
+}
