@@ -14,7 +14,7 @@ body {
 
 header {
   display: flex;
-  justify-content: center;
+  align-items: center;
   flex-direction: column;
 }
 h1 {
@@ -101,9 +101,13 @@ above to create diamond shape */
   align-items: flex-end;
   overflow: hidden;
 }
+
 img {
   display: block;
   width: 50px;
+}
+.hit img {
+  filter: brightness(4);
 }
 
 .game-buttons {
